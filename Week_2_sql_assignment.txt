@@ -1,0 +1,29 @@
+week2_assignment.sql
+
+USE sales;
+
+-- Question 1
+SELECT check Number, payment Date, amount
+FROM payments;
+
+-- Question 2
+SELECT order Date, required Date, status
+FROM orders
+WHERE status = 'In Process'
+ORDER BY order Date DESC;
+
+-- Question 3
+SELECT first Name, last Name, email
+FROM employees
+WHERE job Title = 'Sales Rep'
+ORDER BY employee Number DESC;
+
+-- Question 4
+SELECT *
+FROM offices;
+
+-- Question 5
+SELECT product Name, quantity In Stock
+FROM products
+ORDER BY buy Price ASC
+LIMIT 5;
